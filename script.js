@@ -1,3 +1,13 @@
+document.getElementById("enter_buttn").style = "display: none;"
+document.getElementById("start").style = "width: 200px;"
+document.getElementById("user_input").style = "display: none;"
+var start = document.getElementById("start").onclick = function(){
+start.innerHTML = "restart";
+document.getElementById("enter_buttn").style = "display: block;"
+document.getElementById("user_input").style = "display: block;"
+// document.getElementById("start").style = "display: none;"
+
+
 var number = Math.floor(Math.random() * 100)
 console.log(number);
 var chances= 10;
@@ -35,10 +45,26 @@ document.getElementById("enter_buttn").onclick = function(){
     if(chances == 0){
         document.getElementById("usertext").innerHTML = "GAME OVER!"
         document.getElementById("usertext").style= "color: red;"
+        document.getElementById("user_input").style= "display: none;"
+        document.getElementById("chances").style= "display: none;"
+        document.getElementById("enter_buttn").style= "display: none;"
+        document.getElementById("start").onclick = function(){
+            start;
+            document.getElementById("user_input").style = "display: block;"
+            document.getElementById("enter_buttn").style = "display: block;"
+            document.getElementById("chances").style = "display: block;"
+            document.getElementById("usertext").style = "display: none;"
+            
+
+            
+        }
+    
         
     }
 
 
 }
-    
+}
+
+
    
