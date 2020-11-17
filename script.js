@@ -12,6 +12,8 @@ var number = Math.floor(Math.random() * 100)
 console.log(number);
 var chances= 10;
 
+var randon_num= 100;
+
 document.getElementById("chances").innerHTML = "chances: " + chances;
 
 document.getElementById("enter_buttn").onclick = function(){
@@ -19,11 +21,23 @@ document.getElementById("enter_buttn").onclick = function(){
     var user_input = document.getElementById("user_input").value;
     console.log(user_input);
 
-
-    if(user_input == number) {
+    if(user_input > randon_num) {
+        document.getElementById("usertext").innerHTML = "INVALID"
+        document.getElementById("usertext").style = "background-color: red;"
+        
+        alert("INVALID")
+    }else if(user_input == number) {
         document.getElementById("usertext").innerHTML = "You Win"
-        document.getElementById("usertext").style= "color: Green;"
+        document.getElementById("usertext").style= "color: green;"
+        document.getElementById("usertext").style= "font-size: 50px;"
         document.getElementById("div2").style= "background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(./images/congrat.jpg)"
+        document.getElementById("user_input").style= "display: none;"
+        document.getElementById("chances").style= "display: none;"
+        document.getElementById("enter_buttn").style= "display: none;"
+        document.getElementById("start").innerHTML = "RESTART"
+        
+            
+            
         
 
 

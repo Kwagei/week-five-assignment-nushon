@@ -12,11 +12,15 @@ body{
 h1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(194, 134, 22);
 }
 
 #enter_buttn{
     height: 35px;
-    margin: auto auto auto auto;
+    width: 15%;
+    margin: 20px auto auto auto;
+    background-color: gray;
+    border-radius: 4px;
     
 }
 
@@ -31,6 +35,7 @@ h1{
     border-radius: 20px;
     border: none;
 }
+
 
 /* #user_input{
     width: 20%;
@@ -56,14 +61,20 @@ h1{
 }
 
 #div2{
-    margin-left: -10px;
+    margin-top: -500px;
+    margin-left: 360px;
     background-color: rgb(99, 151, 172);
     position: relative;
     font-size: 130%;
     height: 400px;
-    width: 101%;
+    width: 50%;
     border-radius: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#divtxt{
+    text-align: center;
+    margin-top: 50px;
 }
 
 #image{
@@ -87,8 +98,9 @@ h1{
     color: white; */
 }
 
-h4{
+.top{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
 }
 
 #user_input{
@@ -96,5 +108,13 @@ h4{
     height: 30px; 
     width: 50%;
     font-size: 100%;
+    border-radius: 5px;
     margin: auto auto auto auto;
+    border: none;
+}
+
+footer{
+    margin-top: 70px;
+    color: rgb(194, 134, 22);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
